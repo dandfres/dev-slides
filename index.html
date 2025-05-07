@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Journey - Code 201</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+  <body
+    class="bg-gray-100 text-gray-800 min-h-screen flex flex-col items-center justify-center px-4"
+  >
+    <div class="max-w-2xl w-full p-6 bg-white shadow-xl rounded-xl">
+      <!-- Contenedor principal donde se mostraran las diapositivas -->
+      <div class="container mx-auto px-4 py-6 min-h-[300px] max-w-3xl"></div>
+
+      <!-- Botones para navegar entre diapositivas -->
+      <div class="mt-6 flex justify-between gap-2">
+        <button
+          id="prevBtn"
+          class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 disabled:invisible"
+        >
+          Anterior
+        </button>
+        <button
+          id="nextBtn"
+          class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:invisible"
+        >
+          Siguiente
+        </button>
+      </div>
+    </div>
+
+    <!-- Enlace al javascript -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
